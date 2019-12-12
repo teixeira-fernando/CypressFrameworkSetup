@@ -13,5 +13,10 @@
 
 const cucumber = require('cypress-cucumber-preprocessor').default
 module.exports = (on, config) => {
-  on('file:preprocessor', cucumber())
+  on('file:preprocessor', cucumber()),
+  on('task', {
+     failed: require('cypress-failed-log/src/failed')(),
+   }),
+   on('task', require('@cypress/code-coverage/task'))
+
 }

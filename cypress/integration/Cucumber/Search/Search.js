@@ -20,4 +20,6 @@ When(`I click on the search button`, () => {
 
 Then(`I am redirected to the results page`, () => {
     cy.contains('hdtbSum').should('exist');
+    // using this lib: https://github.com/testing-library/cypress-testing-library
+    cy.queryByText('Shopping').should('exist');
 });
