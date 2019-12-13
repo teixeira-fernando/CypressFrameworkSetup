@@ -3,3 +3,5 @@ package-lock.json
 cypress/videos/
 cypress/screenshots/
 cypress/logs/
+mochareports/
+mochawesome-report

@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/cypress run",
-    "cypress:open": "./node_modules/.bin/cypress open"
+    "cypress:open": "./node_modules/.bin/cypress open",
+    "combine-reports": "mochawesome-merge --reportDir cypress/reports/mocha > mochareports/report.json",
+    "generate-report": "marge mochareports/*.json -f report -o mochareports"
   },
   "repository": {
     "type": "git",
@@ -24,7 +26,12 @@
     "cypress": "^3.7.0",
     "cypress-cucumber-preprocessor": "^1.18.0",
     "cypress-failed-log": "^2.5.1",
+    "cypress-multi-reporters": "^1.2.3",
     "istanbul-lib-coverage": "^2.0.5",
+    "mocha": "^6.2.2",
+    "mochawesome": "^4.1.0",
+    "mochawesome-merge": "^2.1.0",
+    "mochawesome-report-generator": "^4.0.1",
     "nyc": "^14.1.1"
   },
   "cypress-cucumber-preprocessor": {

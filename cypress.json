@@ -1,5 +1,9 @@
 {
     "video": true,
     "baseUrl": "http://google.com",
-    "testFiles": "**/*.feature"
+    "testFiles": "**/*.feature",
+    "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+         "configFile": "reporterOptions.json"
+     }
 }
