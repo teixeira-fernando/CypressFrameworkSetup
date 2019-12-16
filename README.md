@@ -15,3 +15,6 @@ https://github.com/TheBrainFamily/cypress-cucumber-preprocessor
 Included mocha reports and mochawesome:
 https://github.com/adamgruber/mochawesome-report-generator
 https://github.com/cypress-io/testing-workshop-cypress/blob/master/slides/09-reporters/PITCHME.md
+
+Included docker execution:
+https://github.com/cypress-io/cypress-docker-images/tree/master/included/3.7.0
