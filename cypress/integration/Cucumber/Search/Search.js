@@ -1,8 +1,11 @@
-import { Given, When, Then } from "cypress-cucumber-preprocessor/steps"
+import { Given, When, Then } from "cypress-cucumber-preprocessor/steps";
+import SearchPage from "../../pages/searchPage";
+
+const searchPage = new SearchPage();
 
 Given(`I am in the search page`, () => {
     //Visit ExecuteAutomation Website
-    cy.visit('/');
+    searchPage.visit();
 });
 
 
@@ -10,12 +13,13 @@ When(`I fill the search field`, () => {
      cy.fixture('users').as('usersJSON');
 
      cy.get("@usersJSON").then((user) => {
-         cy.get('[name="q"]').type(user.name);
+         searchPage.fillSearchField(user.name);
+         //cy.get('[name="q"]').type(user.name);
      });
 });
 
 When(`I click on the search button`, () => {
-     cy.get('[name="q"]').type('{enter}');
+     searchPage.submit();
 });
 
 Then(`I am redirected to the results page`, () => {
