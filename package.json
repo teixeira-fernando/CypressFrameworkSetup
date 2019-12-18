@@ -4,12 +4,12 @@
   "description": "Cypress Framework - Setup",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/cypress run",
+    "test": "./node_modules/.bin/cypress run --record --key bea31146-8b5a-438e-a1c6-628abad55c61",
     "cypress:open": "./node_modules/.bin/cypress open",
     "combine-reports": "mochawesome-merge --reportDir cypress/reports/mocha > mochareports/report.json",
     "generate-report": "marge mochareports/*.json -f report -o mochareports --charts=true",
     "cypress:docker": "docker run -it -v $PWD:/e2e -w /e2e cypress/included:3.7.0",
-    "cypress:test:qa": "./node_modules/.bin/cypress run --env name=qa --browser chrome"
+    "cypress:test:qa": "./node_modules/.bin/cypress run --env name=qa --browser chrome --record --key bea31146-8b5a-438e-a1c6-628abad55c61"
   },
   "repository": {
     "type": "git",

@@ -1,9 +1,10 @@
 {
-    "video": true,
-    "baseUrl": "http://google.com",
-    "testFiles": "**/*.feature",
-    "reporter": "cypress-multi-reporters",
-    "reporterOptions": {
-         "configFile": "reporterOptions.json"
-     }
+  "video": true,
+  "baseUrl": "http://google.com",
+  "testFiles": "**/*.feature",
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "configFile": "reporterOptions.json"
+  },
+  "projectId": "qxyg9z"
 }
