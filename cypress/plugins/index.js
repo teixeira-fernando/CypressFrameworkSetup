@@ -39,3 +39,5 @@ module.exports = (on, config) => {
   //Return the configuration file details
   return processConfigName(on, config);
 }
+
+require('@applitools/eyes-cypress')(module);
