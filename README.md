@@ -19,3 +19,6 @@ https://github.com/cypress-io/testing-workshop-cypress/blob/master/slides/09-rep
 Included docker execution:
 https://github.com/cypress-io/cypress-docker-images/tree/master/included/3.7.0
 https://www.cypress.io/blog/2019/05/02/run-cypress-with-a-single-docker-command/
+
+
+Added Applitools for Visual Regression Testing.
